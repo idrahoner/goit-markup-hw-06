@@ -65,6 +65,54 @@
                 <use href="./images/icons.svg#icon-close-window"></use>
               </svg>
             </button>
+            <form class="order">
+              <b class="order-title">Залиште свої дані, ми вам передзвонимо</b>
+              <label for="client-name" class="order-label">Ім‘я</label>
+              <div class="input-wrapper">
+                <input type="text" id="client-name" name="client-name" class="order-field" />
+                <svg class="order-icon">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+              <label for="client-phone" class="order-label">Телефон</label>
+              <div class="input-wrapper">
+                <input type="tel" id="client-phone" name="client-phone" class="order-field" />
+                <svg class="order-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <label for="client-mail" class="order-label">Пошта</label>
+              <div class="input-wrapper">
+                <input type="email" id="client-mail" name="client-mail" class="order-field" />
+                <svg class="order-icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+              <label for="order-field client-comment" class="order-label">Коментар</label>
+              <textarea
+                name="client-comment"
+                id="client-commetn"
+                rows="7"
+                placeholder="Введіть текст"
+                class="order-field order-comment"
+              ></textarea>
+              <div class="order-policy">
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-policy"
+                    class="checkbox-policy visually-hidden"
+                  />
+                  <svg class="check-icon">
+                    <use class="policy-unchecked" href="./images/icons.svg#icon-check-box"></use>
+                    <use class="policy-checked" href="./images/icons.svg#icon-checked"></use>
+                  </svg>
+                  Погоджуюся з розсилкою та приймаю &#173;
+                  <a href="" class="policy-link">Умови договору</a>
+                </label>
+              </div>
+              <button type="submit" class="hero-button">Відправити</button>
+            </form>
           </div>
         </div>
       </section>
@@ -418,7 +466,7 @@
           </address>
         </div>
         <div class="social-media">
-          <h3 class="media-title">приєднуйтесь</h3>
+          <h3 class="footer-title">приєднуйтесь</h3>
           <ul class="flex-schedule list">
             <li class="media-item">
               <a href="https://www.instagram.com" class="media-link grey-circle">
@@ -450,6 +498,24 @@
             </li>
           </ul>
         </div>
+        <form class="subscription-form">
+          <div class="subscription-box">
+            <label class="footer-title" for="subscription-mail"> Підпишіться на розсилку </label>
+            <input
+              type="email"
+              name="email"
+              id="subscription-mail"
+              placeholder="E-mail"
+              class="subscription-field"
+            />
+          </div>
+          <button type="submit" class="hero-button subscription-button">
+            Підписатися
+            <svg class="subscription-icon">
+              <use href="./images/icons.svg#icon-subscription"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
