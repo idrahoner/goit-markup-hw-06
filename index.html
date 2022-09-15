@@ -66,7 +66,7 @@
               </svg>
             </button>
             <form class="order">
-              <b class="order-title">Залиште свої дані, ми вам передзвонимо</b>
+              <strong class="order-title">Залиште свої дані, ми вам передзвонимо</strong>
               <label for="client-name" class="order-label">Ім‘я</label>
               <div class="input-wrapper">
                 <input type="text" id="client-name" name="client-name" class="order-field" />
@@ -88,29 +88,26 @@
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
               </div>
-              <label for="order-field client-comment" class="order-label">Коментар</label>
+              <label for="client-comment" class="order-label">Коментар</label>
               <textarea
                 name="client-comment"
-                id="client-commetn"
-                rows="7"
+                id="client-comment"
                 placeholder="Введіть текст"
-                class="order-field order-comment"
+                class="order-comment"
               ></textarea>
-              <div class="order-policy">
-                <label class="checkbox-label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-policy"
-                    class="checkbox-policy visually-hidden"
-                  />
-                  <svg class="check-icon">
-                    <use class="policy-unchecked" href="./images/icons.svg#icon-check-box"></use>
-                    <use class="policy-checked" href="./images/icons.svg#icon-checked"></use>
-                  </svg>
-                  Погоджуюся з розсилкою та приймаю &#173;
-                  <a href="" class="policy-link">Умови договору</a>
-                </label>
-              </div>
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  name="checkbox-policy"
+                  class="checkbox-policy visually-hidden"
+                />
+                <svg class="check-icon">
+                  <use class="policy-unchecked" href="./images/icons.svg#icon-check-box"></use>
+                  <use class="policy-checked" href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                Погоджуюся з розсилкою та приймаю&#160;
+                <a href="" class="policy-link">Умови договору</a>
+              </label>
               <button type="submit" class="hero-button">Відправити</button>
             </form>
           </div>
@@ -498,9 +495,9 @@
             </li>
           </ul>
         </div>
-        <form class="subscription-form">
-          <div class="subscription-box">
-            <label class="footer-title" for="subscription-mail"> Підпишіться на розсилку </label>
+        <div class="subscripction-box">
+          <p class="footer-title">Підпишіться на розсилку</p>
+          <form class="subscription-form">
             <input
               type="email"
               name="email"
@@ -508,14 +505,14 @@
               placeholder="E-mail"
               class="subscription-field"
             />
-          </div>
-          <button type="submit" class="hero-button subscription-button">
-            Підписатися
-            <svg class="subscription-icon">
-              <use href="./images/icons.svg#icon-subscription"></use>
-            </svg>
-          </button>
-        </form>
+            <button type="submit" class="hero-button subscription-button">
+              Підписатися
+              <svg class="subscription-icon">
+                <use href="./images/icons.svg#icon-subscription"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
